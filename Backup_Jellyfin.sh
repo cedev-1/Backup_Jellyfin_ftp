@@ -8,8 +8,8 @@ set +o allexport
 BACKUP_DATE=$(date +"%Y-%m-%d")
 ARCHIVE_NAME="jellyfin_backup_$BACKUP_DATE.tar.gz"
 
-mkdir -p "$BACKUP_DIR/var/lib/jellyfin"
-mkdir -p "$BACKUP_DIR/etc/jellyfin"
+mkdir -p "$BACKUP_DIR/var/lib"
+mkdir -p "$BACKUP_DIR/etc"
 
 cp -r /var/lib/jellyfin "$BACKUP_DIR/var/lib"
 cp -r /etc/jellyfin "$BACKUP_DIR/etc/jellyfin"
